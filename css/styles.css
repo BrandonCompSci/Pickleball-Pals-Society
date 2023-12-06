@@ -1,0 +1,9 @@
+/* Make changes that affect entire html document */
+html {
+    word-spacing: 2px;
+    line-height: 2rem;
+    text-align: justify;
+
+    /* Add smooth scrolling */
+    scroll-behavior: smooth;
+}
