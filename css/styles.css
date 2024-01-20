@@ -8,6 +8,25 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Style body element */
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Style header */
+header {
+    padding: 10px 350px 0px 350px;
+}
+
+/* Style nav element */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Specify dimensions of website logo */
+#logo {
+    max-width: 200px;
+    max-height: 200px;
 }
