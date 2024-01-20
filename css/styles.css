@@ -1,3 +1,11 @@
+/* Used for declaring global CSS variables */
+:root {
+    --color-theme-1: rgba(27, 54, 93, 1);
+    --color-theme-2: rgb(249, 171, 25);
+    --font-theme-1: rgba(208, 209, 211, 1);
+    --link-color: rgba(253, 185, 36, 1);
+}
+
 /* Make changes that affect entire html document */
 html {
     word-spacing: 2px;
@@ -11,11 +19,27 @@ html {
 /* Style body element */
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: var(--color-theme-2);
+}
+
+/* Make all links appear yellow */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+	font-weight: 600;
+}
+
+/* Add flexbox to center items horizontally */
+h2,
+.segment {
+    display: flex;
+    justify-content: center;
 }
 
 /* Style header */
 header {
-    padding: 10px 350px 0px 350px;
+    padding: 10px 350px;
 }
 
 /* Style nav element */
@@ -25,8 +49,45 @@ nav {
     justify-content: space-evenly;
 }
 
+/* Style nav links */
+nav a {
+    font-size: 22px;
+    padding: 0px 30px 25px 30px;
+}
+
+/* Underline links upon mouse hover */
+a:hover {
+    text-decoration: underline;
+}
+
 /* Specify dimensions of website logo */
 #logo {
     max-width: 200px;
     max-height: 200px;
+}
+
+/* Segments are the main content container in each section */
+.segment {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Style text contained within segment */
+.segment-text{
+    max-width: 50%;
+    padding: 0px;
+}
+
+/* Make every second segment dark blue */
+.block-theme {
+    background-color: var(--color-theme-1);
+    color: var(--font-theme-1);
+}
+
+/* Responsive layout - 
+Changes attributes if window is less than 800 px*/
+@media screen and (max-width: 800px) {
+    body {
+        min-width: 400px;
+    }
 }
