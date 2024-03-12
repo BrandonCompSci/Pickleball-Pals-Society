@@ -9,6 +9,17 @@
     <!-- Use 'Inter' font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900">
+
+    <!-- Link to an external JavaScript file -->
+	<script defer src="scripts/script.js"></script>
+
+    <!-- Load jQuery v3.7.0 -->
+	<script src="scripts/jquery.js"></script>
+
+    <!-- Load jQuery "expandy" plugin -->
+	<!-- Source: https://www.jqueryscript.net/accordion/Accordion-Style-jQuery-Plugin-To-Expand-Collapse-Elements.html -->
+	<link href="css/expandy.css" rel="stylesheet">
+	<script src="scripts/expandy.js"></script>
 </head>
 
 <body>
@@ -51,8 +62,31 @@
                     Events
                 </h2>
 
-                <div class="text">
-                    We host recreational and DUPR sessions on a regular basis. Check back soon for updates! 
+                <div class="expand">
+                    <h3 id="event-color">
+                        Upcoming Events&nbsp;
+                    </h3>
+                    <div class="table-container">
+                        <table class="text">
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                                <th>Course Grade</th>
+                            </tr>
+
+                            <tr>
+                                <td>COMP 200</td>
+                                <td>Intro. to Computing and Information Systems</td>
+                                <td>A+</td>
+                            </tr>
+
+                            <tr>
+                                <td>COMP 266</td>
+                                <td>Intro. to Web Programming</td>
+                                <td>In Progress</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

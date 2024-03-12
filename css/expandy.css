@@ -8,11 +8,13 @@
     position: relative;
     overflow: hidden;
 }
+
 .expandy.expandy-hidden{
     display: none;
 }
+
 .expandy-toggle{
-    cursor: none;   
+    cursor: pointer;   
 }
 
 .expandy-toggle:hover {

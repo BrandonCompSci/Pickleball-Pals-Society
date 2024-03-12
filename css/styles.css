@@ -34,7 +34,8 @@ a {
 /* Add flexbox to center items horizontally */
 h2,
 .segment,
-footer {
+footer,
+h3 {
     display: flex;
     justify-content: center;
 }
@@ -104,6 +105,10 @@ a:hover {
 #right {
     display: flex;
     justify-content: flex-end;
+}
+
+#event-color {
+    color: rgb(73, 97, 253);
 }
 
 /* Responsive layout - 
