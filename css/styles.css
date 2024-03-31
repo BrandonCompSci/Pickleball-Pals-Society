@@ -123,6 +123,18 @@ a:hover {
     font-size: 20px;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.yellow-font {
+    color: var(--link-color);
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1471 px*/
 @media screen and (max-width: 1471px) {
