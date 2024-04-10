@@ -151,7 +151,7 @@ a:hover {
     border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: var(--button-background); /* Set a background color */
-    cursor: none; /* Add a mouse pointer on hover */
+    cursor: auto; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
