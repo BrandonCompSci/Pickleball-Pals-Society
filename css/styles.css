@@ -151,7 +151,7 @@ a:hover {
     border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: var(--button-background); /* Set a background color */
-    cursor: auto; /* Add a mouse pointer on hover */
+    cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
@@ -162,8 +162,8 @@ a:hover {
 }
 
 /* Responsive layout - 
-Changes attributes if window is less than 1471 px*/
-@media screen and (max-width: 1471px) {
+Changes attributes if window is less than 1830 px*/
+@media screen and (max-width: 1830px) {
 
     /* Style text contained within segment */
     .segment-text {
