@@ -64,12 +64,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Specify dimensions of website logo */
-#logo {
-    max-width: 300px;
-    max-height: 300px;
-}
-
 /* Segments are the main content container in each section */
 .segment {
     padding-left: 20px;
@@ -177,9 +171,34 @@ a:hover {
     align-items: center;
 }
 
+/* Specify dimensions of website logo */
+#logo {
+    /* max-width: 300px;
+    max-height: 300px; */
+  width: 40vw;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Default - all links visible */
+.nav-extra {
+    display: inline;
+  }
+
+.nav-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1830 px*/
-@media screen and (max-width: 1830px) {
+@media (max-width: 1830px) {
 
     /* Style text contained within segment */
     .segment-text {
@@ -189,15 +208,28 @@ Changes attributes if window is less than 1830 px*/
 }
 
 /* Responsive layout - 
+Changes attributes if window is less than 1830 px*/
+@media (max-width: 1500px) {
+
+    .nav-extra {
+        display: none;
+      }
+}
+
+/* Responsive layout - 
 Changes attributes if window is less than 800 px*/
-@media screen and (max-width: 800px) {
-    body {
+@media (max-width: 800px) {
+    /* body {
         min-width: 400px;
-    }
+    } */
 
     /* Style text contained within segment */
     .segment-text {
-        max-width: 50%;
+        max-width: 80%;
         padding: 0px;
+    }
+
+    .nav-logo, header {
+        display: none;
     }
 }
