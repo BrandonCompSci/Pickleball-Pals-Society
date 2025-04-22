@@ -123,6 +123,20 @@ a:hover {
     font-size: 20px;
 }
 
+.results-link {
+    color: green;
+    font-size: 20px;
+}
+
+.event-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-links a {
+    margin-right: 10px;
+}
+
 .underline {
     text-decoration: underline;
 }
